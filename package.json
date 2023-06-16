@@ -3,6 +3,10 @@
     "displayName": "FiveM Resource Creator",
     "description": "Creates a FiveM resource",
     "version": "0.0.1",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Rasinzz/fivem-resource-creator"
+    },
     "engines": {
         "vscode": "^1.79.0"
     },
