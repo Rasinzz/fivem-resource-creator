@@ -1,0 +1,49 @@
+{
+    "name": "fivem-resource-creator",
+    "displayName": "FiveM Resource Creator",
+    "description": "Creates a FiveM resource",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.79.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [],
+    "main": "./extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "fivem-resource-creator.createResource",
+                "title": "Create FiveM Resource"
+            }
+        ],
+        "menus": {
+            "explorer/context": [
+                {
+                    "when": "explorerResourceIsFolder",
+                    "command": "fivem-resource-creator.createResource"
+                }
+            ]
+        }
+    },
+    "scripts": {
+        "lint": "eslint .",
+        "pretest": "npm run lint",
+        "test": "node ./test/runTest.js"
+    },
+    "devDependencies": {
+        "@types/glob": "^8.1.0",
+        "@types/mocha": "^10.0.1",
+        "@types/node": "20.2.5",
+        "@types/vscode": "^1.79.0",
+        "@vscode/test-electron": "^2.3.2",
+        "eslint": "^8.41.0",
+        "glob": "^8.1.0",
+        "mocha": "^10.2.0",
+        "typescript": "^5.1.3"
+    },
+    "dependencies": {
+        "fs-extra": "^11.1.1"
+    }
+}
