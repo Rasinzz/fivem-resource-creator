@@ -2,6 +2,7 @@
     "name": "fivem-resource-creator",
     "displayName": "FiveM Resource Creator",
     "description": "Creates a FiveM resource",
+    "publisher": "Rasinzz",
     "version": "0.0.2",
     "repository": {
         "type": "git",
