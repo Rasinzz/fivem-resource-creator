@@ -30,7 +30,7 @@ function activate(context) {
             testDir = `${extensionPath}/vehicle`;
         }
 
-        fs.moveSync(testDir, resourcePath, { overwrite: true });
+        fs.copySync(testDir, resourcePath, { overwrite: true });
 
         // Finished message
         vscode.window.showInformationMessage(`Created FiveM resource named: ${resourceName}`);
