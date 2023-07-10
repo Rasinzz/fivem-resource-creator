@@ -2,7 +2,7 @@
     "name": "fivem-resource-creator",
     "displayName": "FiveM Resource Creator",
     "description": "Creates a FiveM resource",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "repository": {
         "type": "git",
         "url": "https://github.com/Rasinzz/fivem-resource-creator"
